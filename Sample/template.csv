@@ -1,0 +1,15 @@
+﻿variable_name,datatype_check,missing_check,logic_check,regex_check,constraint_check,choices_check,id_check,ids_check
+PassengerId,int64,yes,,,,,yes,
+Survived,int64,yes,,,,,,
+Pclass,int64,yes,,,,,,
+Name,object,yes,,"r'^[A-Za-z]+\, [A-Za-z]+\.?'",,,,yes
+Sex,object,yes,,,,"['male','female']",,yes
+Age,float64,yes,,,>18 and <80,,,yes
+MaritalStatus,object,yes,,,,"['single','married']",,yes
+SpouseName,object,,MaritalStatus=='married',,,,,
+SibSp,int64,yes,,,,,,
+Parch,int64,yes,,,,,,
+Ticket,object,yes,,,,,,
+Fare,float64,yes,,,,,,
+Cabin,object,yes,,r'[A-Z]\d+',,,,
+Embarked,object,yes,,,,,,
