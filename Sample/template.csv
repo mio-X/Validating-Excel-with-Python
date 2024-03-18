@@ -6,7 +6,7 @@ Name,object,yes,,"r'^[A-Za-z]+\, [A-Za-z]+\.?'",,,,yes
 Sex,object,yes,,,,"['male','female']",,yes
 Age,float64,yes,,,>18 and <80,,,yes
 MaritalStatus,object,yes,,,,"['single','married']",,yes
-SpouseName,object,,"MaritalStatus==''married""",,,,,
+SpouseName,object,,"MaritalStatus==""married""",,,,,
 SibSp,int64,yes,,,,,,
 Parch,int64,yes,,,,,,
 Ticket,object,yes,,,,,,
